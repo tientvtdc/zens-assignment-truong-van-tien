@@ -116,7 +116,7 @@ body {
 .box-action .btn {
     padding: 12px 0;
     width: 256px;
-    margin: 0 12px;
+    margin: 12px 12px;
     cursor: pointer;
     border: none;
     color: #fff;
