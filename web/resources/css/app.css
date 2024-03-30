@@ -1,0 +1,150 @@
+:root {
+    --primary-color: #29b363;
+    --secondary-color: #1877f2;
+    --gray-color-400: #b8b8b8;
+    --gray-color-600: #7f7b7b;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: monospace, sans-serif;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.header > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+.right-header > .box-text {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: .8rem;
+    min-width: fit-content;
+    text-align: right;
+}
+
+.right-header .right-header_top {
+    color: var(--gray-color-400);
+}
+
+.right-header > .avatar {
+    border-radius: 50%;
+    height: auto;
+    margin-left: 8px;
+}
+
+.box-title {
+    background-color: var(--primary-color);
+}
+
+.box-title > .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #fff;
+    text-align: center;
+}
+
+.box-title > .container > h1 {
+    font-size: 2rem;
+}
+
+.box-title > .container > p {
+    margin-top: 20px;
+}
+
+.box-joke {
+    padding: 92px 0;
+}
+
+.box-joke .alert-message {
+    text-align: center;
+}
+
+.box-joke p {
+    color: var(--gray-color-600);
+    font-size: 1.2rem;
+}
+
+.box-action {
+    margin-top: 64px;
+    padding: 32px 0;
+    text-align: center;
+}
+
+.box-action .btn {
+    padding: 12px 0;
+    width: 256px;
+    margin: 0 12px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+
+.box-action .btn.btn-dislike {
+    background: var(--primary-color);
+}
+
+.box-action .btn.btn-like {
+    background: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 32px;
+}
+
+footer > .container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--gray-color-400);
+    font-size: .8rem;
+}
+
+footer .footer-copyright {
+    margin-top: 24px;
+    display: inline-block;
+    color: var(--gray-color-600);
+    font-size: .9rem;
+}
